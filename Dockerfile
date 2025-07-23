@@ -4,7 +4,7 @@ WORKDIR /app
 COPY package*.json ./
 RUN npm install
 
-COPY ..
+COPY . .
 
 ENV PORT=3001
 ENV MONGO_URI=mongodb+srv://DanielRmzDev:wIDaa2zBaLnU0eaq@microservicescourse.s2e0cev.mongodb.net/?retryWrites=true&w=majority&appName=MicroServicesCourse
